@@ -55,10 +55,14 @@ public class Session3_02 {
                     } while (true);
                     break;
                 case 2:
-                    System.out.println("Số học viên đã nhập: " +countStudent);
-                    System.out.println("Điểm trung bình: " + totalScore/countStudent);
-                    System.out.println("Điểm cao nhất: " +maxScore);
-                    System.out.println("Điểm thấp nhất: " +minScore);
+                    if (countStudent == 0) {
+                        System.out.println("Chưa có dữ liệu");
+                    } else {
+                        System.out.println("Số học viên đã nhập: " +countStudent);
+                        System.out.println("Điểm trung bình: " + totalScore/countStudent);
+                        System.out.println("Điểm cao nhất: " +maxScore);
+                        System.out.println("Điểm thấp nhất: " +minScore);
+                    }
                     break;
                 case 3:
                     System.exit(0);
